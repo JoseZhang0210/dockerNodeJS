@@ -6,7 +6,7 @@
     "mssql": "^12.7.0"
   },
   "scripts": {
-    "dev": "nodemon --legacy-watch index.js"
+    "dev": "nodemon index.js --legacy-watch"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
