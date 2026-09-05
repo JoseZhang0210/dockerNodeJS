@@ -1,4 +1,12 @@
+## Test-Docker-Jenkins
+
+### 專案依賴
+image: [https://hub.docker.com/repository/docker/josezhang0210/node-api](https://hub.docker.com/repository/docker/josezhang0210/node-api)
+
+### 專案目的
 測試用 Docker 跑 Jenkins 自動將 Node.js 專案與 image 整合建立 container
+
+### 部署步驟
 1. 用 Docker 開啟 Jenkins
    ```bash
     docker run -d --name jenkins -e "TZ=Asia/Taipei" -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -v C:/docker/projects:/var/jenkins_home/workspace --user root jenkins/jenkins:lts
